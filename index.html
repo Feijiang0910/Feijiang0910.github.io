@@ -105,6 +105,75 @@
         
           <section id="main">
   
+    <article id="post-1204" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/04/1204/" class="article-date">
+	  <time datetime="2018-12-04T12:28:14.157Z" itemprop="datePublished">December 4, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 1204<br>date: 2018-12-04 20:28:14<br>tags:<br>—SET NAMES UTF8;<br>DROP DATABASE IF EXISTS xz_1;<br>CREATE DATABASE xz_1 CHARSET=UTF8;<br>USE xz_1;<br>CREATE TABLE xz_laptop_family(<br>    fid TINYINT,<br>    fname VARCHAR(10),<br>    laptopCount TINYINT<br>);<br>INSERT INTO xz_laptop_family VALUES<br>    (10,’联想’,2),<br>    (20,’戴尔’,2),<br>    (30,’小米’,3);<br>CREATE TABLE xz_laptop(<br>    lid TINYINT,<br>    title VARCHAR(100),<br>    price DECIMAL(8,2),<br>    spec VARCHAR(100),<br>    detail VARCHAR(200),<br>    shelfTime DATE,<br>    isOnsale BOOL,<br>    familyid TINYINT<br>);<br>INSERT INTO xz_laptop VALUES<br>   (1,’联想’,4500.00,’E480c’,’2017年经典款新！精致小黑！22.3mm轻薄体验，180度开合灵活耐用，高效稳健办公最长可达5小时’,’20170910’,1,10),<br>   (2,’联想’,5500.50,’小新700电竞版’,’小新家族2017闪耀换新！晒单得E卡！12期免息！小新700电竞版！经典之选’,’20171212’,1,10),<br>   (3,’戴尔’,6999.99,’灵越燃7000 R1525S’,’轻薄微边框、燃7000、七代i5双核CPU、128GSSD+500G双硬盘、IPS全高清显示屏，动力强劲性能澎湃！’,’20180101’,1,20),<br>   (4,’戴尔’,7999.88,’灵越燃7000 R1525S’,’轻薄微边框、燃7000、七代i5双核CPU、128GSSD+500G双硬盘、IPS全高清显示屏，动力强劲性能澎湃！’,’20181001’,1,20),<br>   (5,’小米’,6599.50,’Air’,’i5 独立显卡、全高清窄边框 8G内存 256G固态硬盘 支持SSD硬盘扩容 薄至14.8mm 轻至1.28kg！AKG扬声器！’,’20181010’,1,30),<br>   (6,’小米’,7900.00,’RX310UQ’,’铝镁合金 纯固态 轻至1.45kg 金属超极本 、双尺寸可选’,’20140101’,0,30),<br>   (7,’小米’,8888.88,’MacBook Air’,’5月焕新季，领券买新机！神券满6000减600！一体成型金属机身，纤薄轻巧，长达12小时续航’,’20180101’,1,30);</p>
+<p>   SELECT * FROM xz_laptop;</p>
+<p>hexo clean   //清理缓存<br>hexo g   //编译  md===&gt;HTML<br>hexo d   //上传</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-1203" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/03/1203/" class="article-date">
+	  <time datetime="2018-12-03T12:49:39.375Z" itemprop="datePublished">December 3, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 1203<br>date: 2018-12-03 20:49:39<br>tags:<br>—DROP DATABASE IF EXISTS user;<br>CREATE DATABASE user;<br>USE user;<br>CREATE TABLE user(<br>       id INT,<br>       name VARCHAR(6),<br>       upwd VARCHAR(12),<br>       email VARCHAR(20),<br>       phone VARCHAR (11),<br>       sex VARCHAR(1),<br>       username VARCHAR(6),<br>       registertime VARCHAR(16),<br>       isonline VARCHAR(3)<br>);<br>INSERT INTO user VAlUES(‘1’,’QQ’,’123456’,’987654’,’12345678912’,’M’,’WX’,’2010-10-09’,’NO’);<br>INSERT INTO user VAlUES(‘2’,’lili’,’123456’,’654987’,’12345678912’,’F’,’LL’,’2012-11-21’,’OFF’);<br>INSERT INTO user VAlUES(‘3’,’LULU’,’123456’,’654654’,’12345678998’,’F’,’UU’,’2046-12-12’,’NO’);<br>INSERT INTO user VAlUES(‘4’,’QIQI’,’122456’,’987654’,’78945612332’,’M’,’II’,’2018-12-21’,’OFF’);<br>UPDATE user SET phone=’65412398713’,email=’654789’ WHERE id=’1’;<br>DELETE FROM user WHERE id=’3’;</p>
+<p>SELECT*FROM user;</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-内涵段子" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -302,6 +371,30 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/12/04/1204/">(no title)</a></h6>
+              <span>December 4, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/12/03/1203/">(no title)</a></h6>
+              <span>December 3, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/01/内涵段子/">内涵段子</a></h6>
               <span>December 1, 2018</span>
             </div>
@@ -338,7 +431,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
